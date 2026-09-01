@@ -1966,11 +1966,13 @@ iframe {
     }
 
     #perfil img {
-        height: 230px;
+        width: 100%;
+        height: 100%;
     }
 
     #perfil2 img {
-        height: 210px;
+        width: 100%;
+        height: 100%;
     }
 
     #perfil-info,
