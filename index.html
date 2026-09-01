@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBS Advocacia</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="img/Favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <!-- Barra de progresso -->
+    <div id="progress-bar"></div>
+    <!-- Fundo decorativo -->
+    <div class="background-shapes">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+    <!-- Menu lateral -->
+    <aside class="sidebar">
+        <div class="logo">
+            <img src="img/BBSSemfundo.png" alt="bbs" class="bbs">
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#hero">Início</a>
+                </li>
+                <li>
+                    <a href="#about">Escritório</a>
+                </li>
+                <li>
+                    <a href="#areas">Áreas</a>
+                </li>
+                <li>
+                    <a href="#team">Equipe</a>
+                </li>
+                <li>
+                    <a href="#testimonials">Depoimentos</a>
+                </li>
+                <li>
+                    <a href="#contact">Contato</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <a href="https://www.instagram.com/advocaciabbs/" target="_blank">Instagram</a>
+            <br>
+            <a>Whatsapp</a>
+        </div>
+    </aside>
+    <!-- Conteúdo -->
+    <main>
+        <!-- HERO -->
+        <section id="hero">
+            <div class="hero-left">
+                <hr>
+                <div class="hero-right">
+                    <div class="hero-image">
+                        <img src="img/BBSSemfundo.png" alt="Advogado">
+                    </div>
+                    <hr>
+                </div>
+                <h1>
+                    Defender direitos é apenas o começo.
+                </h1>
+                <p>
+                    Atuamos com inteligência jurídica,
+                    planejamento e soluções modernas para pessoas
+                    e empresas.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn-primary">
+                        Agendar Consulta
+                    </a>
+                    <a href="#areas" class="btn-secondary">
+                        Conheça nossas áreas
+                    </a>
+                </div>
+            </div>
+        </section>
+        <!-- SOBRE -->
+        <section id="about">
+            <div class="section-title">
+                <span>Quem Somos</span>
+                <h2>
+                    O direito aliado à estratégia.
+                </h2>
+            </div>
+            <div class="about-container">
+                <div class="about-image">
+                    <img src="img/BBSadvogados.png" alt="Escritório">
+                </div>
+                <div class="about-content">
+                    <h3>
+                        Mais do que resolver processos.
+                    </h3>
+                    <p>
+                        Cada cliente possui uma história,
+                        um desafio e um objetivo diferente.
+
+                        Nossa missão é transformar problemas
+                        jurídicos em soluções inteligentes.
+                    </p>
+                    <p>
+                        Trabalhamos lado a lado com nossos clientes,
+                        oferecendo atendimento humanizado,
+                        transparência e acompanhamento em cada etapa.
+                    </p>
+
+                </div>
+            </div>
+        </section>
+        <!-- ÁREAS -->
+        <section id="areas">
+            <div class="section-title">
+                <span>Especialidades</span>
+                <h2>
+                    Áreas de atuação
+                </h2>
+            </div>
+            <div class="wrapper">
+                <div class="areas-container">
+                    <article class="area-card active" data-area="criminal" onclick="mostrarPerfil2(
+                        'Especialistas em Direito Criminal',
+                        'Direito Criminal',
+                        'img/Criminal.png',
+                        'Especialistas:',
+                        'Dr. Victor Hugo',
+                        'Dr. Maria Silva',
+                        'Dr. João Souza')">
+                        <div class="area-number">
+                            01
+                        </div>
+                        <h3>
+                            Direito Criminal
+                        </h3>
+                        <p>
+                            Defesa técnica,
+                            acompanhamento em inquéritos,
+                            audiências e Tribunal do Júri.
+                        </p>
+                    </article>
+                    <article class="area-card" data-area="civil" onclick="mostrarPerfil2(
+                        'Especialistas em Direito Civil',
+                        'Direito Civil',
+                        'img/Civil.png',
+                        'Especialistas:',
+                        'Dr. Tales Bittencourt')">
+                        <div class="area-number">
+                            02
+                        </div>
+                        <h3>
+                            Direito Civil
+                        </h3>
+                        <p>
+                            Contratos,
+                            responsabilidade civil,
+                            indenizações e ações judiciais.
+                        </p>
+                    </article>
+                    <article class="area-card" data-area="tributario" onclick="mostrarPerfil2(
+                        'Especialistas em Direito Tributário',
+                        'Direito Tributário',
+                        'img/Tributario.png',
+                        'Especialistas:',
+                        'Dr. Igor Barbosa')">
+                        <div class="area-number">
+                            03
+                        </div>
+                        <h3>
+                            Direito Tributário
+                        </h3>
+                        <p>
+                            Planejamento tributário,
+                            recuperação de créditos
+                            e defesa administrativa.
+                        </p>
+                    </article>
+                    <article class="area-card" data-area="rural" onclick="mostrarPerfil2(
+                        'Especialistas em Direito Rural',
+                        'Direito Rural',
+                        'img/Rural.png',
+                        'Especialistas:',
+                        'Dr. João Silva')">
+                        <div class="area-number">
+                            04
+                        </div>
+                        <h3>
+                            Direito Rural
+                        </h3>
+                        <p>
+                            Assessoria completa ao produtor rural,
+                            contratos,
+                            regularização e sucessão.
+                        </p>
+                    </article>
+                    <article class="area-card" data-area="familia" onclick="mostrarPerfil2(
+                        'Especialistas em Direito da Familia',
+                        'Direito da Familia',
+                        'img/Familia.png',
+                        'Especialistas:',
+                        'Dr. João Silva')">
+                        <div class="area-number">
+                            05
+                        </div>
+                        <h3>
+                            Direito da Familia
+                        </h3>
+                        <p>
+                            Assessoria completa em divórcios, guarda, pensão e sucessões.
+                        </p>
+                    </article>
+                    <article class="area-card" data-area="empresarial" onclick="mostrarPerfil2(
+                        'Especialistas em Direito Empresarial',
+                        'Direito Empresarial',
+                        'img/Empresarial.png',
+                        'Especialistas:',
+                        'Dr. João Silva')">
+                        <div class="area-number">
+                            06
+                        </div>
+                        <h3>
+                            Direito Empresarial
+                        </h3>
+                        <p>
+                            Assessoria completa para empresas, contratos, sociedades e gestão jurídica.
+                        </p>
+                    </article>
+                </div>
+            </div>
+        </section>
+        <!-- Areas Escondidos-->
+         <div id="modal2">
+            <div id="perfil2">
+                <img id="perfil-foto2">
+                <div id="perfil-info2">
+                    <h3 id="perfil-nome2"></h3>
+                    <span id="perfil-area2"></span>
+                    <hr class="linhamodal">
+                    <p id="perfil-descricao2"></p>
+                    <br>
+                    <p id="perfil-adv1"></p>
+                    <p id="perfil-adv2"></p>
+                </div>
+            </div>
+        </div>
+        <!-- NÚMEROS -->
+        <!-- EQUIPE -->
+        <section id="team">
+            <div class="section-title">
+                <span>Equipe</span>
+                <h2>
+                    Profissionais preparados para cada desafio.
+                </h2>
+            </div>
+            <div class="team-container">
+                <article class="team-card"
+                    onclick="mostrarPerfil(
+                        'Dr. Victor Hugo',
+                        'Direito Criminal',
+                        'img/Victor.png',
+                        'Especialista em Direito Criminal.',
+                        '❝ Atua na defesa dos direitos e garantias de seus clientes em todas as fases do processo penal, oferecendo uma atuação estratégica, ética e comprometida com a melhor solução para cada caso. ❞')">
+                    <img src="img/Victorperfil.png" alt="Advogado">
+                    <div class="team-info">
+                        <h3>Dr. Victor Hugo</h3>
+                        <span>Direito Criminal</span>
+                    </div>
+                </article>
+                <article class="team-card"
+                    onclick="mostrarPerfil(
+                        'Dr. Tales Bittencourt',
+                        'Direito Civil',
+                        'img/Tales.png',
+                        'Especialista em Direito Civil.',
+                        'Especialista em conflitos e relações civis, presta assessoria jurídica em questões patrimoniais, contratuais, familiares e indenizatórias, sempre buscando soluções seguras e eficientes.')">
+                    <img src="img/Talesperfil.png" alt="Advogada">
+                    <div class="team-info">
+                        <h3>Dr. Tales Bittencourt</h3>
+                        <span>Direito Civil</span>
+                    </div>
+                </article>
+                <article class="team-card"
+                    onclick="mostrarPerfil(
+                        'Dr. Igor Barbosa',
+                        'Direito Tributário',
+                        'img/Igor.png',
+                        'Especialista em Direito Tributário.',
+                        'Oferece consultoria e planejamento tributário para pessoas físicas e empresas, atuando na redução de riscos fiscais e na defesa dos interesses do cliente perante os órgãos competentes.')">
+                    <img src="img/Igorperfil.png" alt="Advogado">
+                    <div class="team-info">
+                        <h3>Dr. Igor Barbosa</h3>
+                        <span>Direito Tributário</span>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+        <!-- Equipe Escondidos -->
+        <div id="modal">
+            <div id="perfil">
+                <img id="perfil-foto">
+                <div id="perfil-info">
+                    <h3 id="perfil-nome"></h3>
+                    <span id="perfil-area"></span>
+                    <hr class="linhamodal">
+                    <p id="perfil-descricao"></p>
+                    <br>
+                    <p id="perfil-descricaoCompleta"></p>
+                </div>
+            </div>
+        </div>
+        <!-- DEPOIMENTOS -->
+        <section id="testimonials">
+            <div class="section-title">
+                <span>Depoimentos</span>
+                <h2>
+                    A confiança dos nossos clientes.
+                </h2>
+            </div>
+            <div class="testimonial-container">
+                <article class="testimonial">
+                    <p>
+                        "Equipe extremamente competente e atenciosa.
+                        Me senti seguro durante todo o processo."
+                    </p>
+                    <strong>Carlos Henrique</strong>
+                </article>
+                <article class="testimonial">
+                    <p>
+                        "Atendimento rápido, transparente e muito profissional.
+                        Recomendo sem dúvidas."
+                    </p>
+                    <strong>Fernanda Souza</strong>
+                </article>
+                <article class="testimonial">
+                    <p>
+                        "Resolveram uma situação complexa de forma estratégica.
+                        Excelente escritório."
+                    </p>
+                    <strong>Ricardo Lima</strong>
+                </article>
+            </div>
+        </section>
+        <!-- CONTATO -->
+        <section id="contact">
+            <div class="contact-left">
+                <span>Contato</span>
+                <h2>
+                    Vamos conversar sobre seu caso.
+                </h2>
+                <p>
+                    Entre em contato conosco para agendar uma consulta
+                    e conhecer a melhor estratégia para sua necessidade.
+                </p>
+                <div class="contact-info">
+                    <h3>Redes Sociais</h3>
+                    <div class="sidebar-footer2">
+                        <a href="https://www.instagram.com/advocaciabbs/" target="_blank"
+                            class="caixaredei">Instagram</a>
+                        <a href="https://wa.me/5564999999999" target="_blank" class="caixaredew">Whatsapp</a>
+                        <a href="mailto:contato@bbsadvocacia.com" target="_blank" class="caixaredee">Email</a>
+                    </div>
+                    <h3>Endereço</h3>
+                    <div class="endereco">
+                        <div class="localizacao-mapa">
+                            <a href="https://www.google.com/maps/place/BBS+Advocacia+e+Assessoria+Jur%C3%ADdica/@-16.4451414,-51.1218382,588a,75y,338.17h,90t/data=!3m7!1e1!3m5!1sWD1yROaa3sgLH63JFfdhvg!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D0%26panoid%3DWD1yROaa3sgLH63JFfdhvg%26yaw%3D338.17087!7i16384!8i8192!4m7!3m6!1s0x9366bdaf6c7d46c7:0xcd392b74bf045bcb!8m2!3d-16.4449989!4d-51.1219232!10e5!16s%2Fg%2F11vrry78ps?entry=ttu&g_ep=EgoyMDI2MDcyMC4wIKXMDSoASAFQAw%3D%3D"
+                                target="_blank">Iporá - GO 📍</a>
+                            <p>Av. Brasil, 123</p>
+                            <hr>
+                            <br>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d662.4576597668053!2d-51.121784899294866!3d-16.444905824911594!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9366bdaf6c7d46c7%3A0xcd392b74bf045bcb!2sBBS%20Advocacia%20e%20Assessoria%20Jur%C3%ADdica!5e1!3m2!1spt-BR!2sbr!4v1786249194450!5m2!1spt-BR!2sbr"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                        <br>
+                        <div class="localizacao-mapa2">
+                            <a href="https://maps.app.goo.gl/SPDqu8CrmxSL9nsg9" target="_blank">Canarana - MT 📍</a>
+                            <p>Av. Brasil, 123</p>
+                            <hr>
+                            <br>
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d4641.199289881565!2d-52.268184000000005!3d-13.559595000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMTPCsDMzJzM0LjUiUyA1MsKwMTYnMDUuNSJX!5e1!3m2!1spt-BR!2sbr!4v1786246436285!5m2!1spt-BR!2sbr"
+                                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="footer-logo">
+            <img src="img/BBSSemfundo.png" alt="bbs" class="bbs2">
+        </div>
+        <div class="footer-links">
+            <a href="#hero">Início</a>
+            <a href="#about">Escritório</a>
+            <a href="#areas">Áreas</a>
+            <a href="#team">Equipe</a>
+            <a href="#contact">Contato</a>
+        </div>
+        <p>
+            © 2026 BBS Advocacia.
+            Todos os direitos reservados.
+        </p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
