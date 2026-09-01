@@ -1738,7 +1738,7 @@ iframe {
     }
 
     #modal2 .linhamodal {
-        width: 90px;
+        width: 55%;
     }
 
     #modal2.ativo .linhamodal {
@@ -1802,7 +1802,7 @@ iframe {
     }
 
     #modal .linhamodal {
-        width: 90px;
+        width: 55%;
     }
 
     #modal.ativo .linhamodal {
