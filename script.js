@@ -29,3 +29,26 @@ let paginaAtual = 0;
 function mostrarCards() {
     
 }
+
+/* MOSTRAR DADOS DA AREA */
+
+const perfil2 = document.getElementById("perfil2");
+const modal2 = document.getElementById("modal2")
+
+function mostrarPerfil2(nome, area, foto, descricao, nome1, nome2) {
+
+    document.getElementById("perfil-foto2").src = foto;
+    document.getElementById("perfil-nome2").textContent = nome;
+    document.getElementById("perfil-area2").textContent = area;
+    document.getElementById("perfil-descricao2").textContent = descricao;
+    document.getElementById("perfil-adv1").textContent = nome1;
+    document.getElementById("perfil-adv2").textContent = nome2;
+
+    modal2.classList.add("ativo");
+}
+
+modal2.addEventListener("click", function (e){
+    if(e.target == modal2){
+        modal2.classList.remove("ativo");
+    }
+})
